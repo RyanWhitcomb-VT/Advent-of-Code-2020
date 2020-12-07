@@ -32,7 +32,7 @@ def bag_contains(bag_dict, bag_info):
     else:
         for bag in bag_info.keys():
             add = bag_info[bag]
-            mult = bag_info[bag]*bag_contains(bag_dict, bag_dict[bag])
+            mult = bag_info[bag] * bag_contains(bag_dict, bag_dict[bag])
             bag_count += (add + mult)
     return bag_count
 
